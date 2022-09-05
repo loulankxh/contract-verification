@@ -43,7 +43,6 @@ contract Escrow {
   function refund() onlyOwner public{state = State.REFUND;}
   function check() public view {
     assert(totalFunds == raised || state != State.OPEN);
-    // assert(totalFunds == raised );
   }
 }
 
