@@ -7,7 +7,7 @@ import {ERC20} from "solmate/src/tokens/ERC20.sol";
 
 /// @notice Minimal ERC4626 tokenized Vault implementation.
 /// @author Solmate (https://github.com/transmissions11/solmate/blob/main/src/mixins/ERC4626.sol)
-abstract contract ERC4626 is ERC20 {
+contract ERC4626 is ERC20 {
     // using SafeTransferLib for ERC20;
     // using FixedPointMathLib for uint256;
 
@@ -124,7 +124,9 @@ abstract contract ERC4626 is ERC20 {
                             ACCOUNTING LOGIC
     //////////////////////////////////////////////////////////////*/
 
-    function totalAssets() public view virtual returns (uint256);
+    function totalAssets() public view virtual returns (uint256) {
+      return asset.totalSupply();
+    }
 
     function convertToShares(uint256 assets) public view virtual returns (uint256) {
         uint256 supply = totalSupply; // Saves an extra SLOAD if totalSupply is non-zero.
@@ -189,4 +191,15 @@ abstract contract ERC4626 is ERC20 {
     function beforeWithdraw(uint256 assets, uint256 shares) internal virtual {}
 
     function afterDeposit(uint256 assets, uint256 shares) internal virtual {}
+
+    /*//////////////////////////////////////////////////////////////
+                          Invariants
+    //////////////////////////////////////////////////////////////*/
+    function consistentShares(address p) public view {
+      uint256 assets = asset.balanceOf(p);      
+      uint256 shares = balanceOf[p];
+      uint256 _totalAssets = totalAssets();
+      assert(shares * _totalAssets == assets * totalSupply);
+    }
+
 }
