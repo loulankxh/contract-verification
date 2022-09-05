@@ -552,8 +552,14 @@ contract ERC777 is Context, IERC777, IERC20 {
         uint256 amount
     ) internal virtual {}
 
-    function equalBalance() public view {
-      assert(_totalSupply == totalBalance);
+    // function equalBalance() public view {
+    //   assert(_totalSupply == totalBalance);
+    // }
+
+    function operatorConsistency(address p, address o) public view {
+        assert((_operators[p][o] != _revokedDefaultOperators[p][o]) ||
+              !_defaultOperators[o]
+              );
     }
 
 }
