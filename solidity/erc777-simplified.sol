@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/token/ERC777/IERC777Sender.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
-import "@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol";
+// import "@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol";
 
 /**
  * @dev Implementation of the {IERC777} interface.
@@ -552,13 +552,9 @@ contract ERC777 is Context, IERC777, IERC20 {
         uint256 amount
     ) internal virtual {}
 
-    // function equalBalance() public view {
-    //   assert(_totalSupply == totalBalance);
-    // }
-
     function operatorConsistency(address p, address o) public view {
-        assert((_operators[p][o] != _revokedDefaultOperators[p][o]) ||
-              !_defaultOperators[o]
+        assert( !_operators[p][o]  ||
+              !(_defaultOperators[o] && _revokedDefaultOperators[p][o])
               );
     }
 

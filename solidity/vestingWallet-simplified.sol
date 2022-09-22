@@ -3,9 +3,9 @@
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-import "@openzeppelin/contracts/utils/Address.sol";
+// import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/utils/Context.sol";
-import "@openzeppelin/contracts/utils/math/Math.sol";
+// import "@openzeppelin/contracts/utils/math/Math.sol";
 
 /**
  * @title VestingWallet
@@ -81,7 +81,8 @@ contract VestingWallet is Context {
         uint256 releasable = vestedAmount(uint64(block.timestamp)) - released();
         _released += releasable;
         emit EtherReleased(releasable);
-        Address.sendValue(payable(beneficiary()), releasable);
+        // Address.sendValue(payable(beneficiary()), releasable);
+        payable(beneficiary()).send(releasable);
     }
 
     /**

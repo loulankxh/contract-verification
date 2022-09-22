@@ -160,8 +160,7 @@ contract PaymentSplitter {
 
   function check(address p) public view {
     uint256 _totalReceived = address(this).balance + totalReleased();
-    uint256 amount = shares(p) / totalShares() * _totalReceived;
-    // uint256 amount = shares(p) / totalShares() * totalReceived;
-    assert(releasable(p) + released(p) == amount );
+    uint256 amount = shares(p) * _totalReceived / totalShares() ;
+    assert(released(p) <= amount);
   }
 }
