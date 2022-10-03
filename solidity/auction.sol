@@ -1,8 +1,10 @@
 // source: https://docs.soliditylang.org/en/v0.8.11/solidity-by-example.html#blind-auction
 
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.4;
-
+//comment: pragma solidity ^0.8.4;
+/**
+ * @notice invariant forall (address p) withdrawCount[p] <= 1
+ */
 contract SimpleAuction {
     // Parameters of the auction. Times are either
     // absolute unix timestamps (seconds since 1970-01-01)
@@ -32,14 +34,14 @@ contract SimpleAuction {
     // is asked to confirm a transaction or
     // when an error is displayed.
 
-    /// The auction has already ended.
-    error AuctionAlreadyEnded();
-    /// There is already a higher or equal bid.
-    error BidNotHighEnough(uint highestBid);
-    /// The auction has not ended yet.
-    error AuctionNotYetEnded();
-    /// The function auctionEnd has already been called.
-    error AuctionEndAlreadyCalled();
+    // The auction has already ended.
+//comment:    error AuctionAlreadyEnded();
+    // There is already a higher or equal bid.
+//comment:    error BidNotHighEnough(uint highestBid);
+    // The auction has not ended yet.
+//comment:    error AuctionNotYetEnded();
+    // The function auctionEnd has already been called.
+//comment:    error AuctionEndAlreadyCalled();
 
     mapping(address=>uint) withdrawCount;
 
@@ -68,7 +70,8 @@ contract SimpleAuction {
         // Revert the call if the bidding
         // period is over.
         if (block.timestamp > auctionEndTime)
-            revert AuctionAlreadyEnded();
+//comment:             revert AuctionAlreadyEnded();
+		revert("block.timestamp > auctionEndTime");
 
         // If the bid is not higher, send the
         // money back (the revert statement
@@ -76,7 +79,8 @@ contract SimpleAuction {
         // function execution including
         // it having received the money).
         if (msg.value <= highestBid)
-            revert BidNotHighEnough(highestBid);
+//comment:            revert BidNotHighEnough(highestBid);
+	    revert("msg <= highestBid");
 
         if (highestBid != 0) {
             // Sending back the money by simply using
@@ -128,9 +132,11 @@ contract SimpleAuction {
 
         // 1. Conditions
         if (block.timestamp < auctionEndTime)
-            revert AuctionNotYetEnded();
+ //comment           revert AuctionNotYetEnded();
+            revert("block.timestamp < anctionEndtime");
         if (ended)
-            revert AuctionEndAlreadyCalled();
+ //comment           revert AuctionEndAlreadyCalled();
+	    revert("ended");
 
         // 2. Effects
         ended = true;
@@ -140,7 +146,8 @@ contract SimpleAuction {
         beneficiary.transfer(highestBid);
     }
 
-    function withdrawOnce(address p) public view {
-      assert(withdrawCount[p] <= 1);
-    }
+//    function withdrawOnce(address p) public view {
+//      assert(withdrawCount[p] <= 1);
+//
+//    }
 }

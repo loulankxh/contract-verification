@@ -1,11 +1,11 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (finance/VestingWallet.sol)
-pragma solidity ^0.8.0;
+//com: pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
-// import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/Context.sol";
-// import "@openzeppelin/contracts/utils/math/Math.sol";
+//com: import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import "/usr/local/lib/node_modules/@openzeppelin/contracts/utils/Address.sol";
+import "/usr/local/lib/node_modules/@openzeppelin/contracts/utils/Context.sol";
+import "/usr/local/lib/node_modules/@openzeppelin/contracts/utils/math/Math.sol";
 
 /**
  * @title VestingWallet
