@@ -2,5 +2,6 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "solmate": "^6.5.0"
-  }
+  },
+  "repository": {                                                                                "type": "git",                                                                               "url": "https://github.com/OpenZeppelin/openzeppelin-contracts.git"                        } 
 }

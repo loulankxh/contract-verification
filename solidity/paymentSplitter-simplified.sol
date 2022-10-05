@@ -1,7 +1,11 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (finance/PaymentSplitter.sol)
 
-pragma solidity ^0.8.0;
+/**
+* @notice invariant forall (address p) released(p) <= (shares(p) * (address(this).balance + totalReleased()) / totalShares())
+*/
+
+//pragma solidity ^0.8.0;
 
 // import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 // import "@openzeppelin/contracts/utils/Address.sol";
@@ -158,9 +162,9 @@ contract PaymentSplitter {
         emit PayeeAdded(account, shares_);
     }
 
-  function check(address p) public view {
-    uint256 _totalReceived = address(this).balance + totalReleased();
-    uint256 amount = shares(p) * _totalReceived / totalShares() ;
-    assert(released(p) <= amount);
-  }
+  //function check(address p) public view {
+    //uint256 _totalReceived = address(this).balance + totalReleased();
+    //uint256 amount = shares(p) * _totalReceived / totalShares() ;
+    //assert(released(p) <= amount);
+  //}
 }

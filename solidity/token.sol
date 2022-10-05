@@ -1,7 +1,11 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity ^0.8.0;
+//pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "./@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+/**
+* @notice invariant totalSupply() == totalBalance
+*/
 
 contract Token is ERC20 {
     uint256 totalBalance;
@@ -20,9 +24,9 @@ contract Token is ERC20 {
         totalBalance -= amount;
     }
 
-    function equalBalance() public view {
-      assert(totalSupply() == totalBalance);
-    }
+    //function equalBalance() public view {
+      //assert(totalSupply() == totalBalance);
+    //}
 
 
 }

@@ -1,15 +1,19 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (token/ERC1155/ERC1155.sol)
 
-pragma solidity ^0.8.0;
+//pragma solidity ^0.8.0;
+
+/**
+ * @notice invariant forall (uint256 tokenId) totalBalances[tokenId] == totalSupply[tokenId]
+ */
 
 // import "@openzeppelin/contracts/token/ERC1155/IERC1155.sol";
-import "@openzeppelin/contracts/utils/introspection/IERC165.sol";
-import "@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
+import "./@openzeppelin/contracts/utils/introspection/IERC165.sol";
+import "./@openzeppelin/contracts/token/ERC1155/IERC1155Receiver.sol";
 // import "@openzeppelin/contracts/token/ERC1155/extensions/IERC1155MetadataURI.sol";
 // import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/Context.sol";
-import "@openzeppelin/contracts/utils/introspection/ERC165.sol";
+import "./@openzeppelin/contracts/utils/Context.sol";
+import "./@openzeppelin/contracts/utils/introspection/ERC165.sol";
 
 interface IERC1155 is IERC165 {
     /**
@@ -292,10 +296,10 @@ contract ERC1155 is Context, ERC165, IERC1155 {
 
         uint256 fromBalance = _balances[id][from];
         require(fromBalance >= amount, "ERC1155: insufficient balance for transfer");
-        unchecked {
-            _balances[id][from] = fromBalance - amount;
-            totalBalances[id] -= amount;
-        }
+        //unchecked {
+        _balances[id][from] = fromBalance - amount;
+        totalBalances[id] -= amount;
+        //}
         _balances[id][to] += amount;
         totalBalances[id] += amount;
 
@@ -467,10 +471,10 @@ contract ERC1155 is Context, ERC165, IERC1155 {
 
         uint256 fromBalance = _balances[id][from];
         require(fromBalance >= amount, "ERC1155: burn amount exceeds balance");
-        unchecked {
-            _balances[id][from] = fromBalance - amount;
-            totalBalances[id] -= amount;
-        }
+        //unchecked {
+        _balances[id][from] = fromBalance - amount;
+        totalBalances[id] -= amount;
+        //}
         totalSupply[id] -= amount;
 
         emit TransferSingle(operator, from, address(0), id, amount);

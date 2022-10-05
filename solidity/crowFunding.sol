@@ -1,6 +1,10 @@
 // source: https://github.com/eth-sri/verx-benchmarks/blob/master/overview/main.sol
 
-pragma solidity ^0.8.0;
+// pragma solidity ^0.8.0;
+
+/**
+ * @notice invariant totalFunds == raised || state != State.OPEN 
+ */
 
 contract Escrow {
   mapping(address => uint256) deposits;
@@ -41,9 +45,9 @@ contract Escrow {
   modifier onlyOwner {require(owner == msg.sender); _; }
   function close() onlyOwner public{state = State.SUCCESS;}
   function refund() onlyOwner public{state = State.REFUND;}
-  function check() public view {
-    assert(totalFunds == raised || state != State.OPEN);
-  }
+ // function check() public view {
+   // assert(totalFunds == raised || state != State.OPEN);
+ // }
 }
 
 contract Crowdsale {

@@ -2,6 +2,14 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
+/**
+* @notice invariant _totalSupply==totalBalance  
+*/
+
+/**
+* @notice invariant forall (address account) _balanceOf[account]>=0
+*/
+
 contract Wallet {
     address private _owner;
     mapping(address => int) private _balanceOf;
@@ -55,12 +63,12 @@ contract Wallet {
     }
     
     function totalSupply() public view returns(int) {
-        assert(_totalSupply==totalBalance);
+        //assert(_totalSupply==totalBalance);
         return _totalSupply;
     }
     
     function balanceOf(address account) public view returns(int) {
-        assert(_balanceOf[account]>=0);
+        //assert(_balanceOf[account]>=0);
         return _balanceOf[account];
     }
 

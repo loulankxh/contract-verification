@@ -1,5 +1,9 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity >=0.7.0 <0.9.0;
+//pragma solidity >=0.7.0 <0.9.0;
+
+/**
+* @notice invariant forall (uint32 p1, uint32 p2) (p1==p2 || !(wins[p1] && wins[p2])) 
+*/
 
 contract Voting {
   mapping(uint32 => uint32) votes;
@@ -30,7 +34,7 @@ contract Voting {
     }
   }
 
-  function inconsistency(uint32 p1, uint32 p2) public view {
-    assert(p1==p2 || !(wins[p1] && wins[p2]));
-  }
+  //function inconsistency(uint32 p1, uint32 p2) public view {
+    //assert(p1==p2 || !(wins[p1] && wins[p2]));
+  //}
 }

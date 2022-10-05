@@ -1,14 +1,19 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts (last updated v4.7.0) (token/ERC777/ERC777.sol)
 
-pragma solidity ^0.8.0;
+//pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC777/IERC777.sol";
-import "@openzeppelin/contracts/token/ERC777/IERC777Recipient.sol";
-import "@openzeppelin/contracts/token/ERC777/IERC777Sender.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+/**
+ * @notice invariant forall (address p, address o) ( !_operators[p][o]  ||                                                               !(_defaultOperators[o] && _revokedDefaultOperators[p][o])
+ */
+
+
+import "./@openzeppelin/contracts/token/ERC777/IERC777.sol";
+import "./@openzeppelin/contracts/token/ERC777/IERC777Recipient.sol";
+import "./@openzeppelin/contracts/token/ERC777/IERC777Sender.sol";
+import "./@openzeppelin/contracts/token/ERC20/IERC20.sol";
 // import "@openzeppelin/contracts/utils/Address.sol";
-import "@openzeppelin/contracts/utils/Context.sol";
+import "./@openzeppelin/contracts/utils/Context.sol";
 // import "@openzeppelin/contracts/utils/introspection/IERC1820Registry.sol";
 
 /**
@@ -408,10 +413,10 @@ contract ERC777 is Context, IERC777, IERC20 {
         // Update state variables
         uint256 fromBalance = _balances[from];
         require(fromBalance >= amount, "ERC777: burn amount exceeds balance");
-        unchecked {
-            _balances[from] = fromBalance - amount;
-            totalBalance -= amount;
-        }
+        //unchecked {
+        _balances[from] = fromBalance - amount;
+        totalBalance -= amount;
+        //}
         _totalSupply -= amount;
 
         emit Burned(operator, from, amount, data, operatorData);
@@ -430,10 +435,10 @@ contract ERC777 is Context, IERC777, IERC20 {
 
         uint256 fromBalance = _balances[from];
         require(fromBalance >= amount, "ERC777: transfer amount exceeds balance");
-        unchecked {
-            _balances[from] = fromBalance - amount;
-            totalBalance -= amount;
-        }
+        //unchecked {
+        _balances[from] = fromBalance - amount;
+        totalBalance -= amount;
+        //}
         _balances[to] += amount;
         totalBalance += amount;
 
@@ -525,9 +530,9 @@ contract ERC777 is Context, IERC777, IERC20 {
         uint256 currentAllowance = allowance(owner, spender);
         if (currentAllowance != type(uint256).max) {
             require(currentAllowance >= amount, "ERC777: insufficient allowance");
-            unchecked {
-                _approve(owner, spender, currentAllowance - amount);
-            }
+            //unchecked {
+            _approve(owner, spender, currentAllowance - amount);
+            //}
         }
     }
 
@@ -552,10 +557,10 @@ contract ERC777 is Context, IERC777, IERC20 {
         uint256 amount
     ) internal virtual {}
 
-    function operatorConsistency(address p, address o) public view {
-        assert( !_operators[p][o]  ||
-              !(_defaultOperators[o] && _revokedDefaultOperators[p][o])
-              );
-    }
+    //function operatorConsistency(address p, address o) public view {
+        //assert( !_operators[p][o]  ||
+              //!(_defaultOperators[o] && _revokedDefaultOperators[p][o])
+             // );
+    //}
 
 }
