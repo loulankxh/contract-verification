@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 
+/**
+* @notice invariant forall (uint32 p1, uint32 p2) (p1==p2 || !(wins[p1].b && wins[p2].b))
+*/
+
 contract Voting {
   struct QuorumSizeTuple {
     uint q;
@@ -144,7 +148,7 @@ contract Voting {
       votes[p].c = newValue;
   }
 
-  function inconsistency(uint32 p1, uint32 p2) public view {
-    assert(p1==p2 || !(wins[p1].b && wins[p2].b));
-  }
+  //function inconsistency(uint32 p1, uint32 p2) public view {
+    //assert(p1==p2 || !(wins[p1].b && wins[p2].b));
+  //}
 }

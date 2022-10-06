@@ -1,3 +1,8 @@
+
+/**
+* @notice invariant forall (uint tokenId) totalSupply[tokenId].n==totalBalances[tokenId].m
+*/
+
 contract Erc1155 {
   struct BalanceOfTuple {
     uint n;
@@ -329,7 +334,7 @@ contract Erc1155 {
       updateAllowanceOnIncrementSpentTotal_r0(t,o,s,delta);
   }
 
-  function check(uint tokenId) public view {
-    assert(totalSupply[tokenId].n==totalBalances[tokenId].m);
-  }
+  //function check(uint tokenId) public view {
+    //assert(totalSupply[tokenId].n==totalBalances[tokenId].m);
+  //}
 }

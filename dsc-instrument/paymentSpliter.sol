@@ -1,3 +1,7 @@
+/**
+* @notice invariant forall (address p) released[p].n <= ((shares[p].n * totalReceived.n) / totalShares.n)
+*/
+
 contract PaymentSpliter {
   struct SharesTuple {
     uint n;
@@ -87,8 +91,8 @@ contract PaymentSpliter {
       totalReceived.n = newValue;
   }
 
-  function check(address p) public view {
-    uint256 amount = (shares[p].n * totalReceived.n) / totalShares.n ;
-    assert(released[p].n <= amount );
-  }
+  //function check(address p) public view {
+    //uint256 amount = (shares[p].n * totalReceived.n) / totalShares.n ;
+    //assert(released[p].n <= amount );
+  //}
 }

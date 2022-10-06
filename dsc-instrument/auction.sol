@@ -1,3 +1,7 @@
+/**
+* @notice invariant forall (address p) withdrawCount[p].c <= 1
+*/
+
 contract Auction {
   struct BalanceTuple {
     uint n;
@@ -295,7 +299,7 @@ contract Auction {
       }
       return false;
   }
-  function withdrawOnce(address p) public view {
-      assert(withdrawCount[p].c <= 1);
-  }
+  //function withdrawOnce(address p) public view {
+      //assert(withdrawCount[p].c <= 1);
+  //}
 }

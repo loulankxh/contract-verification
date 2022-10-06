@@ -1,3 +1,7 @@
+/**
+* @notice invariant forall (uint256 tokenId) (ownerOf[tokenId].p != address(0) || ! exists[tokenId].b)
+*/
+
 contract Nft {
   struct OwnerOfTuple {
     address p;
@@ -399,7 +403,7 @@ contract Nft {
   }
 
 
-    function noOwner(uint256 tokenId) public view {
-      assert(ownerOf[tokenId].p != address(0) || ! exists[tokenId].b);
-    }
+    //function noOwner(uint256 tokenId) public view {
+      //assert(ownerOf[tokenId].p != address(0) || ! exists[tokenId].b);
+    //}
 }

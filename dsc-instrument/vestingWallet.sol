@@ -1,3 +1,7 @@
+/**
+* @notice invariant (released.n == 0 || block.timestamp >= start.t)
+*/
+
 contract VestingWallet {
   struct BeneficiaryTuple {
     address p;
@@ -124,7 +128,7 @@ contract VestingWallet {
       }
       return false;
   }
-  function earlyRelease() public view {
-    assert(released.n == 0 || block.timestamp >= start.t);
-  }
+  //function earlyRelease() public view {
+    //assert(released.n == 0 || block.timestamp >= start.t);
+  //}
 }

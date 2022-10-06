@@ -1,5 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+//pragma solidity ^0.8.0;
+
+/**
+* @notice invariant forall (address p, address o) (! (operators[p][o].b && defaultOperator[o].b))
+*/
 
 contract Erc777 {
   struct RevokedDefaultOperatorTuple {
@@ -364,7 +368,7 @@ contract Erc777 {
       balanceOf[p].n = newValue;
   }
 
-  function operatorConsistency(address p, address o) public view {
-      assert( ! (operators[p][o].b && defaultOperator[o].b)); 
-  }
+  //function operatorConsistency(address p, address o) public view {
+      //assert( ! (operators[p][o].b && defaultOperator[o].b)); 
+  //}
 }

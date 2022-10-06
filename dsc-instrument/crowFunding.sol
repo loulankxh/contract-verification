@@ -1,3 +1,7 @@
+/**
+* @notice invariant (totalBalance.m == raised.n || closed.b)
+*/
+
 contract CrowFunding {
   struct TargetTuple {
     uint t;
@@ -333,7 +337,7 @@ contract CrowFunding {
       }
   }
 
-  function check() public view {
-    assert(totalBalance.m == raised.n || closed.b);
-  }
+  //function check() public view {
+    //assert(totalBalance.m == raised.n || closed.b);
+  //}
 }

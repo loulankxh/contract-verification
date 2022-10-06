@@ -1,3 +1,7 @@
+/**
+* @notice invariant (totalSupply.n == totalBalances.m)
+*/
+
 contract Erc20 {
   struct OwnerTuple {
     address p;
@@ -354,7 +358,7 @@ contract Erc20 {
       }
   }
 
-  function equalBalance() public view {
-    assert(totalSupply.n == totalBalances.m);
-  }
+  //function equalBalance() public view {
+    //assert(totalSupply.n == totalBalances.m);
+  //}
 }
