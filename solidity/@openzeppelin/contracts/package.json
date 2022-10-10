@@ -1,42 +1,42 @@
 {
   "_args": [
     [
-      "@openzeppelin/contracts@^4.7.3",
+      "@openzeppelin/contracts@^3.4.2",
       "/home/lanlu/projects/contract-verification/solidity"
     ]
   ],
-  "_from": "@openzeppelin/contracts@>=4.7.3 <5.0.0",
+  "_from": "@openzeppelin/contracts@>=3.4.2 <4.0.0",
   "_hasShrinkwrap": false,
-  "_id": "@openzeppelin/contracts@4.7.3",
+  "_id": "@openzeppelin/contracts@3.4.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/@openzeppelin/contracts",
-  "_nodeVersion": "16.15.1",
+  "_nodeVersion": "16.7.0",
   "_npmOperationalInternal": {
     "host": "s3://npm-registry-packages",
-    "tmp": "tmp/contracts_4.7.3_1660158542846_0.1110020017384099"
+    "tmp": "tmp/contracts_3.4.2_1630011427161_0.010905950519648933"
   },
   "_npmUser": {
     "email": "frangio.1@gmail.com",
     "name": "frangio"
   },
-  "_npmVersion": "8.11.0",
+  "_npmVersion": "7.20.3",
   "_phantomChildren": {},
   "_requested": {
     "name": "@openzeppelin/contracts",
-    "raw": "@openzeppelin/contracts@^4.7.3",
-    "rawSpec": "^4.7.3",
+    "raw": "@openzeppelin/contracts@^3.4.2",
+    "rawSpec": "^3.4.2",
     "scope": "@openzeppelin",
-    "spec": ">=4.7.3 <5.0.0",
+    "spec": ">=3.4.2 <4.0.0",
     "type": "range"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-4.7.3.tgz",
-  "_shasum": "939534757a81f8d69cc854c7692805684ff3111e",
+  "_resolved": "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.2.tgz",
+  "_shasum": "d81f786fda2871d1eb8a8c5a73e455753ba53527",
   "_shrinkwrap": null,
-  "_spec": "@openzeppelin/contracts@^4.7.3",
+  "_spec": "@openzeppelin/contracts@^3.4.2",
   "_where": "/home/lanlu/projects/contract-verification/solidity",
   "author": {
     "email": "maintainers@openzeppelin.org",
@@ -50,20 +50,19 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "fileCount": 323,
-    "integrity": "sha512-dGRS0agJzu8ybo44pCIf3xBaPQN/65AIXNgK8+4gzKd5kbvlqyxryUYVLJv7fK98Seyd2hDZzVEHSWAh0Bt1Yw==",
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJi9AJPACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmq2Vw//Ydy65GRSUOKHwLVOaQ8+hpq383y4+WAtWDunoQaR3yJATtRC\r\nsh/nVhxpew/+8opg8kvwYvI+xGqOGOXadQjUp4CkE09eFGa2cT1rdHTdhzf1\r\ncCsXBgZyh2R7GrnKnjhPLebZPKToVTANd9Uq35WRiLjBhxO1xgszApqii3Ch\r\n+fIGpHoDquUZhhnYPe3YxwYisBpv7bHxQNE/JPz0CpIOHFom+qtJW3ZbuNV0\r\nwUsX0GXkmG/MI0zBAaHsPmBZNbuPT/i+vQ56CGp6SnwRA6xVXlvaOhWkriNQ\r\nhMaByM7dddZVZngsYund0z6ttoVzueuuLvNWWflahWRu7mOZaJrkxGvEdSU6\r\nuCIxPuO0y/eqTs3btDzJml3URF4bQYZevlJ0/NkRrKEFvLqzfPs6m5YRv8LJ\r\n2BfpueyEfyvKbbJF7yDmh89x4CjCTo4cePJzKzJtFmttPmBYlcy7quLv27pa\r\n64Mwj43vX4vRnw7sbklMZsDaNJXKZp1uA4KKt2xEF5d0QlChsyXAYjEXYEp6\r\nutYozWNVuDHXi9xdYQQYXyhCr47xYnrfwTQMf/B6f1yGhBdT7RgfEL9+b+RH\r\n6qejW25yvscqbipm7EX5Gg2m2WRXG4JdLwqLt3XCg4RNJasD9f7RnZEQnIbz\r\nLupW/ldZikFH2hyVH2Mh0mKAJbAMqN/wlI8=\r\n=LI5e\r\n-----END PGP SIGNATURE-----\r\n",
-    "shasum": "939534757a81f8d69cc854c7692805684ff3111e",
+    "fileCount": 223,
+    "integrity": "sha512-z0zMCjyhhp4y7XKAcDAi3Vgms4T2PstwBdahiO0+9NaGICQKjynK3wduSRplTgk4LXmoO1yfDGO5RbjKYxtuxA==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhKAAjCRA9TVsSAnZWagAAFqQP/jGK/6InmojpAuNfcnmP\nJS0VWD4hrxXcxxoJAp6X5XvXjPeW41WpqeifiPrfemYhXXLEQGeqjdMa10pO\nRvRBzz3qJY5W5Pf3aJAAZtt2b+zec31L1nVGKqWQ+PhXMcSSaqmz+7Q+uvpy\nkDT6QlryNB6zyqTl7SDaPgYu/1ldvM5e6ON1nEsxxcjLxeee8VEtfjmT2cm1\ngW0fi6XnViEzgTTOwV0Kv8wfXyHQoOBvGaeOyaeSQzqtukvc6uJyxieV8IS6\njkX5dhkX7LRTspjk8EIiBayuAhC5mxp2nP7Rh7CXNF3oU4YxUck6Kyc12jSZ\nmjfA9vaJq3UdeQQc6yCbGxZpnatzDRmb4ra+FQfeDkJOALRqL4W39irwndQq\nxSuwGUYl0MWqz6G8onTq6MV14A+CeUUFIrympbtyGmNqTPrT9JqDQZrwHHSB\nSY1KirOansAW5ossquSBd4erkaTSPaysloNHvD295gmujGB09gkudsErqkG9\n+giEpK3Dt8EaWjz5e5Eo1z+R3ySCcR7KdEu6+QVp79X8FC01sRvaYp6YmnLD\nZt3FqkY2Ke6evj9x3Gm9wQYNjNkaIIDam/thTfMddyu+Pq9Ov5C3gAbH160v\nRmY73Y/uQ1TSyNJDLNpQdi2q0UBJPO39FDPRhI4i9fNwqzSW0bba658clep6\nKeYf\r\n=DK0M\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "d81f786fda2871d1eb8a8c5a73e455753ba53527",
     "signatures": [
       {
         "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
-        "sig": "MEQCIHAojHGrqFtiTm9nfKaiHxGtzHybszMWSFhvc7GCljQMAiB7zuB2fB1mkh09obaKarzZsvLXLPUvg/kTxMU23u9grQ=="
+        "sig": "MEQCIBe7VT95SKGkzZoO5n1u5E3UKNZmTSfJrXxCKoF9ZLr2AiBXOFHlkjm8zi+eC9wvmAQ5s6ZuE1lmmgNnRD8h8jicjw=="
       }
     ],
-    "tarball": "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-4.7.3.tgz",
-    "unpackedSize": 1767747
+    "tarball": "https://registry.npmjs.org/@openzeppelin/contracts/-/contracts-3.4.2.tgz",
+    "unpackedSize": 1319896
   },
-  "gitHead": "ecd2ca2cd7cac116f7a37d0e474bbb3d7d5e1c4d",
   "homepage": "https://openzeppelin.com/contracts/",
   "keywords": [
     "contracts",
@@ -75,10 +74,6 @@
   ],
   "license": "MIT",
   "maintainers": [
-    {
-      "name": "ericglau",
-      "email": "ericglau@outlook.com"
-    },
     {
       "name": "frangio",
       "email": "frangio.1@gmail.com"
@@ -99,5 +94,5 @@
     "prepare": "bash ../scripts/prepare-contracts-package.sh",
     "prepare-docs": "cd ..; npm run prepare-docs"
   },
-  "version": "4.7.3"
+  "version": "3.4.2"
 }
