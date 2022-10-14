@@ -11,6 +11,6 @@ Erc20::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 5 warnings.
 No errors found.
 
-real	0m8.397s
-user	0m0.078s
-sys	0m0.017s
+real	0m8.524s
+user	0m0.048s
+sys	0m0.039s

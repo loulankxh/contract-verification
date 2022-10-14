@@ -16,6 +16,6 @@ Use --show-warnings to see 3 warnings.
 Some functions were skipped. Use --show-warnings to see details.
 Errors were found by the verifier.
 
-real	0m6.812s
-user	0m0.065s
-sys	0m0.043s
+real	0m6.824s
+user	0m0.059s
+sys	0m0.039s

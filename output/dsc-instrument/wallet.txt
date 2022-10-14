@@ -11,6 +11,6 @@ Wallet::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 7 warnings.
 Errors were found by the verifier.
 
-real	0m6.378s
-user	0m0.067s
-sys	0m0.034s
+real	0m6.236s
+user	0m0.023s
+sys	0m0.070s

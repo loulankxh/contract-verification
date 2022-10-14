@@ -3,6 +3,10 @@
 
 import "./@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
+/**
+ * @notice invariant forall (uint256 tokenId) (ownerOf(tokenId) != address(0) || ! _exists(tokenId))
+ */
+
 contract NFT is ERC721 {
     constructor() ERC721("NFT", "MCO") {
     }
@@ -14,7 +18,7 @@ contract NFT is ERC721 {
         _burn(tokenId);
     }
 
-    function noOwner(uint256 tokenId) public view {
-      assert(ownerOf(tokenId) != address(0) || ! _exists(tokenId));
-    }
+    //function noOwner(uint256 tokenId) public view {
+      //assert(ownerOf(tokenId) != address(0) || ! _exists(tokenId));
+    //}
 }

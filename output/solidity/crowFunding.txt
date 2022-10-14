@@ -15,6 +15,6 @@ Deployer::[implicit_constructor]: OK
 Use --show-warnings to see 4 warnings.
 Errors were found by the verifier.
 
-real	0m4.300s
-user	0m0.055s
-sys	0m0.047s
+real	0m4.232s
+user	0m0.072s
+sys	0m0.029s

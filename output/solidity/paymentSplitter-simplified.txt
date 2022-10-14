@@ -10,6 +10,6 @@ PaymentSplitter::release: OK
 Use --show-warnings to see 1 warning.
 No errors found.
 
-real	0m4.250s
-user	0m0.086s
-sys	0m0.017s
+real	0m4.382s
+user	0m0.063s
+sys	0m0.040s

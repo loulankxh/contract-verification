@@ -6,6 +6,6 @@ PaymentSpliter::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 3 warnings.
 Errors were found by the verifier.
 
-real	0m4.412s
-user	0m0.054s
-sys	0m0.044s
+real	0m3.970s
+user	0m0.055s
+sys	0m0.051s
