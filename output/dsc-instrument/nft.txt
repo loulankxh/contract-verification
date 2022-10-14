@@ -14,6 +14,6 @@ Nft::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 8 warnings.
 No errors found.
 
-real	0m8.024s
-user	0m0.053s
-sys	0m0.047s
+real	0m7.840s
+user	0m0.064s
+sys	0m0.034s

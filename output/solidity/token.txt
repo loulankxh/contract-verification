@@ -39,6 +39,6 @@ contract Token is ERC20 {
 ^ (Relevant source part starts here and spans across multiple lines).
 
 
-real	0m2.496s
-user	0m0.047s
-sys	0m0.042s
+real	0m2.412s
+user	0m0.041s
+sys	0m0.058s

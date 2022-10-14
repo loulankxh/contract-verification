@@ -1,16 +1,20 @@
-Wallet::[constructor]: OK
-Wallet::getTotalSupply: OK
-Wallet::burn: ERROR
- - /contracts/wallet.sol:44:3: Invariant 'forall (address p) (balanceOf[p].n >= 0)' might not hold at end of function.
-Wallet::getBalanceOf: OK
-Wallet::mint: ERROR
- - /contracts/wallet.sol:55:3: Invariant 'forall (address p) (balanceOf[p].n >= 0)' might not hold at end of function.
-Wallet::transfer: ERROR
- - /contracts/wallet.sol:61:3: Invariant 'forall (address p) (balanceOf[p].n >= 0)' might not hold at end of function.
-Wallet::[receive_ether_selfdestruct]: OK
-Use --show-warnings to see 7 warnings.
-Errors were found by the verifier.
+Error while running compiler, details:
+Warning: This is a pre-release compiler version, please do not use it in production.
 
-real	0m6.236s
-user	0m0.023s
-sys	0m0.070s
+Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing "SPDX-License-Identifier: <SPDX-License>" to each source file. Use "SPDX-License-Identifier: UNLICENSED" for non-open-source code. Please see https://spdx.org for more information.
+--> /contracts/wallet.sol
+
+Warning: Source file does not specify required compiler version!
+--> /contracts/wallet.sol
+
+Error: Undeclared identifier.
+  --> /contracts/wallet.sol:77:7:
+   |
+77 |       checkNegativeBalance();
+   |       ^^^^^^^^^^^^^^^^^^^^
+
+
+
+real	0m2.207s
+user	0m0.066s
+sys	0m0.044s

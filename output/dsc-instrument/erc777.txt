@@ -17,6 +17,6 @@ Erc777::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 3 warnings.
 Errors were found by the verifier.
 
-real	0m9.038s
-user	0m0.066s
-sys	0m0.026s
+real	0m9.073s
+user	0m0.069s
+sys	0m0.037s

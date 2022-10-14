@@ -8,6 +8,6 @@ Auction::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 10 warnings.
 Errors were found by the verifier.
 
-real	0m6.455s
-user	0m0.088s
-sys	0m0.019s
+real	0m6.290s
+user	0m0.063s
+sys	0m0.047s

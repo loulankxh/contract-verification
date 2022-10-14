@@ -113,6 +113,6 @@ std::exception::what: Empty pointer from subexpression
 [solidity::util::tag_comment*] = Empty pointer from subexpression
 
 
-real	0m3.017s
-user	0m0.056s
-sys	0m0.043s
+real	0m2.889s
+user	0m0.052s
+sys	0m0.057s

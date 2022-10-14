@@ -9,13 +9,11 @@ ERC1155::balanceOf: OK
 ERC1155::setApprovalForAll: OK
 ERC1155::isApprovedForAll: OK
 ERC1155::safeTransferFrom: OK
-ERC1155::equalBalance: ERROR
- - /contracts/erc1155.sol:649:7: Assertion might not hold.
 Context::_msgData: SKIPPED
 Use --show-warnings to see 3 warnings.
 Some functions were skipped. Use --show-warnings to see details.
-Errors were found by the verifier.
+No errors found.
 
-real	0m6.824s
-user	0m0.059s
-sys	0m0.039s
+real	0m6.502s
+user	0m0.066s
+sys	0m0.037s

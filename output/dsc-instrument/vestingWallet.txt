@@ -5,6 +5,6 @@ VestingWallet::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 2 warnings.
 No errors found.
 
-real	0m4.347s
-user	0m0.061s
-sys	0m0.045s
+real	0m4.234s
+user	0m0.046s
+sys	0m0.059s

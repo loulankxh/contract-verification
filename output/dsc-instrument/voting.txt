@@ -11,6 +11,6 @@ Voting::[receive_ether_selfdestruct]: OK
 Use --show-warnings to see 2 warnings.
 Errors were found by the verifier.
 
-real	0m5.266s
-user	0m0.052s
-sys	0m0.052s
+real	0m5.269s
+user	0m0.044s
+sys	0m0.055s

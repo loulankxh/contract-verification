@@ -23,6 +23,6 @@ Use --show-warnings to see 13 warnings.
 Some functions were skipped. Use --show-warnings to see details.
 No errors found.
 
-real	0m8.957s
-user	0m0.061s
-sys	0m0.037s
+real	0m8.794s
+user	0m0.057s
+sys	0m0.051s
