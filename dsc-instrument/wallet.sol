@@ -60,17 +60,17 @@ contract Wallet {
         revert("Rule condition failed");
       }
   }
-  //function checkNegativeBalance() private    {
-      //uint N = negativeBalanceKeyArray.length;
+  function checkNegativeBalance() private    {
+      uint N = negativeBalanceKeyArray.length;
       //for(uint i = 0; i<N; i = i+1) {
           //NegativeBalanceKeyTuple memory negativeBalanceKeyTuple = negativeBalanceKeyArray[i];
-          //NegativeBalanceTuple memory negativeBalanceTuple = negativeBalance[negativeBalanceKeyTuple.p];
+         // NegativeBalanceTuple memory negativeBalanceTuple = negativeBalance[negativeBalanceKeyTuple.p];
           //assert(!negativeBalanceTuple._valid);
           // if(negativeBalanceTuple._valid==true) {
           //   revert("negativeBalance");
           // }
       //}
-  //}
+  }
   modifier checkViolations() {
       // Empty()
       _;

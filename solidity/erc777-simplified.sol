@@ -4,7 +4,7 @@
 //pragma solidity ^0.8.0;
 
 /**
- * @notice invariant forall (address p, address o) ( !_operators[p][o]  ||                                                               !(_defaultOperators[o] && _revokedDefaultOperators[p][o])
+ * @notice invariant forall (address p, address o) (!(_operators[p][o] && _defaultOperators[o]))
  */
 
 

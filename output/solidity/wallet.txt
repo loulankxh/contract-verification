@@ -8,6 +8,6 @@ Wallet::balanceOf: OK
 Wallet::[receive_ether_selfdestruct]: OK
 No errors found.
 
-real	0m4.137s
-user	0m0.045s
-sys	0m0.046s
+real	0m4.112s
+user	0m0.069s
+sys	0m0.042s
