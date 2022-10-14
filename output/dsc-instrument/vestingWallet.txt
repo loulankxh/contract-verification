@@ -1,0 +1,10 @@
+VestingWallet::[constructor]: OK
+VestingWallet::release: OK
+VestingWallet::getReleased: OK
+VestingWallet::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 2 warnings.
+No errors found.
+
+real	0m4.274s
+user	0m0.061s
+sys	0m0.042s

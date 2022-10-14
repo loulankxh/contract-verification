@@ -1,0 +1,14 @@
+CrowFunding::[constructor]: OK
+CrowFunding::getRaised: OK
+CrowFunding::getClosed: OK
+CrowFunding::refund: OK
+CrowFunding::withdraw: OK
+CrowFunding::close: OK
+CrowFunding::invest: OK
+CrowFunding::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 5 warnings.
+No errors found.
+
+real	0m7.072s
+user	0m0.070s
+sys	0m0.042s

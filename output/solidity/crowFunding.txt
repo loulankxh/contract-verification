@@ -1,0 +1,20 @@
+Escrow::[constructor]: OK
+Escrow::deposit: OK
+Escrow::withdraw: OK
+Escrow::claimRefund: OK
+Escrow::close: OK
+Escrow::refund: OK
+Escrow::[receive_ether_selfdestruct]: OK
+Crowdsale::[constructor]: OK
+Crowdsale::invest: ERROR
+ - /contracts/crowFunding.sol:71:5: Invariant 'totalFunds == raised || state != State.OPEN ' might not hold when entering function.
+Crowdsale::close: ERROR
+ - /contracts/crowFunding.sol:78:7: Invariant 'totalFunds == raised || state != State.OPEN ' might not hold when entering function.
+ - /contracts/crowFunding.sol:81:7: Invariant 'totalFunds == raised || state != State.OPEN ' might not hold when entering function.
+Deployer::[implicit_constructor]: OK
+Use --show-warnings to see 4 warnings.
+Errors were found by the verifier.
+
+real	0m4.300s
+user	0m0.055s
+sys	0m0.047s

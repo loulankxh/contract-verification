@@ -1,0 +1,11 @@
+PaymentSpliter::[constructor]: ERROR
+ - /contracts/paymentSpliter.sol:32:5: Invariant 'forall (address p) released[p].n <= ((shares[p].n * totalReceived.n) / totalShares.n)' might not hold at end of function.
+PaymentSpliter::release: ERROR
+ - /contracts/paymentSpliter.sol:43:3: Invariant 'forall (address p) released[p].n <= ((shares[p].n * totalReceived.n) / totalShares.n)' might not hold at end of function.
+PaymentSpliter::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 3 warnings.
+Errors were found by the verifier.
+
+real	0m4.412s
+user	0m0.054s
+sys	0m0.044s

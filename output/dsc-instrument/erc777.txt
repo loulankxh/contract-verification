@@ -1,0 +1,22 @@
+Erc777::[constructor]: OK
+Erc777::approve: OK
+Erc777::revokeDefaultOperator: OK
+Erc777::getAllowance: OK
+Erc777::getRevokedDefaultOperator: OK
+Erc777::getTotalSupply: OK
+Erc777::approveOperator: ERROR
+ - /contracts/erc777.sol:92:3: Invariant 'forall (address p, address o) (! (operators[p][o].b && defaultOperator[o].b))' might not hold at end of function.
+Erc777::getOperators: OK
+Erc777::getBalanceOf: OK
+Erc777::getDefaultOperator: OK
+Erc777::burn: OK
+Erc777::mint: OK
+Erc777::transferFrom: OK
+Erc777::transfer: OK
+Erc777::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 3 warnings.
+Errors were found by the verifier.
+
+real	0m9.062s
+user	0m0.078s
+sys	0m0.024s

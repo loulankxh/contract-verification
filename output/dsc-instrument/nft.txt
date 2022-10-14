@@ -1,0 +1,19 @@
+Nft::[constructor]: OK
+Nft::burn: OK
+Nft::getOwnerOf: OK
+Nft::setApproval: OK
+Nft::transferFrom: OK
+Nft::getExists: OK
+Nft::getApproved: OK
+Nft::setApprovalForAll: OK
+Nft::getBalanceOf: OK
+Nft::mint: OK
+Nft::getIsApprovedForAll: OK
+Nft::transfer: OK
+Nft::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 8 warnings.
+No errors found.
+
+real	0m7.925s
+user	0m0.062s
+sys	0m0.040s

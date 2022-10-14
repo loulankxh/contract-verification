@@ -1,0 +1,15 @@
+PaymentSplitter::[constructor]: OK
+PaymentSplitter::[receive]: OK
+PaymentSplitter::totalShares: OK
+PaymentSplitter::totalReleased: OK
+PaymentSplitter::shares: OK
+PaymentSplitter::released: OK
+PaymentSplitter::payee: OK
+PaymentSplitter::releasable: OK
+PaymentSplitter::release: OK
+Use --show-warnings to see 1 warning.
+No errors found.
+
+real	0m4.250s
+user	0m0.086s
+sys	0m0.017s

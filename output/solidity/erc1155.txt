@@ -1,0 +1,21 @@
+ERC165::[constructor]: OK
+ERC165::supportsInterface: OK
+IERC165::[implicit_constructor]: OK
+IERC1155Receiver::[implicit_constructor]: OK
+Context::[implicit_constructor]: OK
+IERC1155::[implicit_constructor]: OK
+ERC1155::[constructor]: OK
+ERC1155::balanceOf: OK
+ERC1155::setApprovalForAll: OK
+ERC1155::isApprovedForAll: OK
+ERC1155::safeTransferFrom: OK
+ERC1155::equalBalance: ERROR
+ - /contracts/erc1155.sol:649:7: Assertion might not hold.
+Context::_msgData: SKIPPED
+Use --show-warnings to see 3 warnings.
+Some functions were skipped. Use --show-warnings to see details.
+Errors were found by the verifier.
+
+real	0m6.812s
+user	0m0.065s
+sys	0m0.043s

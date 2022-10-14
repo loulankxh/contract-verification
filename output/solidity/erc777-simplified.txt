@@ -1,0 +1,33 @@
+IERC20::[implicit_constructor]: OK
+IERC777::[implicit_constructor]: OK
+IERC777Recipient::[implicit_constructor]: OK
+IERC777Sender::[implicit_constructor]: OK
+Context::[implicit_constructor]: OK
+ERC777::[constructor]: OK
+ERC777::name: OK
+ERC777::symbol: OK
+ERC777::decimals: OK
+ERC777::granularity: OK
+ERC777::totalSupply: OK
+ERC777::balanceOf: OK
+ERC777::send: OK
+ERC777::transfer: OK
+ERC777::burn: OK
+ERC777::isOperatorFor: OK
+ERC777::authorizeOperator: OK
+ERC777::revokeOperator: OK
+ERC777::defaultOperators: OK
+ERC777::operatorSend: OK
+ERC777::operatorBurn: OK
+ERC777::allowance: OK
+ERC777::approve: OK
+ERC777::transferFrom: OK
+Context::_msgData: SKIPPED
+ERC777::_spendAllowance: SKIPPED
+Use --show-warnings to see 5 warnings.
+Some functions were skipped. Use --show-warnings to see details.
+No errors found.
+
+real	0m10.016s
+user	0m0.070s
+sys	0m0.037s

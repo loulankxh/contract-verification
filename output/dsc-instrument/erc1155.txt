@@ -1,0 +1,16 @@
+Erc1155::[constructor]: OK
+Erc1155::transfer: OK
+Erc1155::burn: OK
+Erc1155::transferFrom: OK
+Erc1155::getAllowance: OK
+Erc1155::getBalanceOf: OK
+Erc1155::approve: OK
+Erc1155::getTotalSupply: OK
+Erc1155::mint: OK
+Erc1155::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 5 warnings.
+No errors found.
+
+real	0m7.967s
+user	0m0.071s
+sys	0m0.025s

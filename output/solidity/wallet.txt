@@ -1,0 +1,13 @@
+Wallet::[constructor]: OK
+Wallet::getOwner: OK
+Wallet::mint: OK
+Wallet::burn: OK
+Wallet::transfer: OK
+Wallet::totalSupply: OK
+Wallet::balanceOf: OK
+Wallet::[receive_ether_selfdestruct]: OK
+No errors found.
+
+real	0m3.924s
+user	0m0.073s
+sys	0m0.021s

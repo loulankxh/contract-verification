@@ -1,0 +1,28 @@
+IERC20::[implicit_constructor]: OK
+Context::[implicit_constructor]: OK
+VestingWallet::[constructor]: OK
+Address::functionCall: OK
+VestingWallet::beneficiary: OK
+VestingWallet::start: OK
+VestingWallet::duration: OK
+VestingWallet::released: OK
+VestingWallet::release: OK
+VestingWallet::vestedAmount: OK
+SafeERC20::safeTransfer: SKIPPED
+SafeERC20::safeTransferFrom: SKIPPED
+SafeERC20::safeApprove: SKIPPED
+SafeERC20::safeIncreaseAllowance: SKIPPED
+SafeERC20::safeDecreaseAllowance: SKIPPED
+SafeERC20::_callOptionalReturn: SKIPPED
+Address::isContract: SKIPPED
+Address::functionStaticCall: SKIPPED
+Address::functionDelegateCall: SKIPPED
+Address::_verifyCallResult: SKIPPED
+Context::_msgData: SKIPPED
+Use --show-warnings to see 13 warnings.
+Some functions were skipped. Use --show-warnings to see details.
+No errors found.
+
+real	0m8.758s
+user	0m0.059s
+sys	0m0.031s

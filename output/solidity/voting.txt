@@ -1,0 +1,10 @@
+Voting::[constructor]: OK
+Voting::vote: ERROR
+ - /contracts/voting.sol:25:3: Invariant 'forall (uint32 p1, uint32 p2) (p1==p2 || !(wins[p1] && wins[p2])) ' might not hold at end of function.
+Voting::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 1 warning.
+Errors were found by the verifier.
+
+real	0m3.593s
+user	0m0.068s
+sys	0m0.038s

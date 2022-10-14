@@ -1,0 +1,13 @@
+Auction::[constructor]: OK
+Auction::bid: OK
+Auction::withdraw: ERROR
+ - /contracts/auction.sol:66:3: Invariant 'forall (address p) withdrawCount[p].c <= 1' might not hold at end of function.
+Auction::endAuction: OK
+Auction::getBalance: OK
+Auction::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 10 warnings.
+Errors were found by the verifier.
+
+real	0m6.306s
+user	0m0.068s
+sys	0m0.040s

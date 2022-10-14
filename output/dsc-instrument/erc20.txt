@@ -1,0 +1,16 @@
+Erc20::[constructor]: OK
+Erc20::approve: OK
+Erc20::getAllowance: OK
+Erc20::transfer: OK
+Erc20::getTotalSupply: OK
+Erc20::transferFrom: OK
+Erc20::getBalanceOf: OK
+Erc20::mint: OK
+Erc20::burn: OK
+Erc20::[receive_ether_selfdestruct]: OK
+Use --show-warnings to see 5 warnings.
+No errors found.
+
+real	0m8.397s
+user	0m0.078s
+sys	0m0.017s
