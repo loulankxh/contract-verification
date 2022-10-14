@@ -645,7 +645,7 @@ contract ERC1155 is Context, ERC165, IERC1155 {
         return array;
     }
 
-    function equalBalance(uint256 tokenId) public view {
-      assert(totalBalances[tokenId] == totalSupply[tokenId]);
-    }
+    //function equalBalance(uint256 tokenId) public view {
+      //assert(totalBalances[tokenId] == totalSupply[tokenId]);
+    //}
 }
